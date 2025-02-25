@@ -80,6 +80,38 @@ JWT_SECRET=your_jwt_secret
 }
 ```
 
+### 📌 Get User Profile
+**Endpoint:** `GET /user/profile`
+**Headers:**
+```json
+{
+  "Authorization": "Bearer your_jwt_token"
+}
+```
+**Response:**
+```json
+{
+  "id": "user_id",
+  "email": "johndoe@example.com",
+  "fullname": { "firstname": "John", "lastname": "Doe" }
+}
+```
+
+### 📌 Logout a User
+**Endpoint:** `GET /user/logout`
+**Headers:**
+```json
+{
+  "Authorization": "Bearer your_jwt_token"
+}
+```
+**Response:**
+```json
+{
+  "message": "User logged out successfully"
+}
+```
+
 ## Project Structure
 ```
 📂 auth-api
@@ -104,5 +136,4 @@ JWT_SECRET=your_jwt_secret
 This project is open-source and available under the **MIT License**.
 
 🚀 *Happy Coding!*
-````
 
