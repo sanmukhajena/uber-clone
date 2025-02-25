@@ -63,6 +63,23 @@ JWT_SECRET=your_jwt_secret
 }
 ```
 
+### 📌 Login a User
+**Endpoint:** `POST /user/login`
+**Request Body:**
+```json
+{
+  "email": "johndoe@example.com",
+  "password": "password123"
+}
+```
+**Response:**
+```json
+{
+  "token": "your_jwt_token",
+  "user": { "id": "user_id", "email": "johndoe@example.com" }
+}
+```
+
 ## Project Structure
 ```
 📂 auth-api
@@ -87,4 +104,5 @@ JWT_SECRET=your_jwt_secret
 This project is open-source and available under the **MIT License**.
 
 🚀 *Happy Coding!*
+````
 
